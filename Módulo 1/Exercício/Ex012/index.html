@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Trabalhando com vídeos</h1>
+        <p>
+            Existem alguns tipos de formatos de vídeos que são compatíveis com html5 os padrões mais utilizados e suportados são:
+            <ul>
+                <li>MP4 (.mp4 e .mkv)</li>
+                <li>WEBM</li>
+                <li>OGV</li>
+            </ul>
+            Deve-se possuir vários formatos de vídeos para serem carregados pois existem navegadores que não são compatíveis com alguns formatos
+        </p>
+        <p>
+        HandBrake, app open source grátis para converter vídeos
+        </p> <hr>
+        <h2>Inserindo vídeos hospedados localmente</h2>
+        <p>Este vídeo está hospedado no meu próprio servidor</p> <!--tag "video", para carregar video, parâmetro "width" para ajustar tamanho, parametro "controls" pra mostrar botoes no vídeo, o parametro "poster" é para deixar uma capa antes de iniciar o vídeo a famosa thumb -->
+        <video src="media/meu-video.ogv.ogv" width="450" controls poster="imagens/thumbpaisagem.jpg"></video> <hr>
+        <p>
+            nesta parte de baixo foi colocado os 3 formatos de vídeo dentro do código para que se não carregar o primeiro que será mp4, irá pro segundo, ogv, e terceiro webm. Caso o navegador não carregue nenhum dos formatos uma mensagem será exibida <!--Usar a tag "video", tiras o "src", e criar um "source src", dentro de type coloque qual o tipo e qual a extensão separados por "/"-->
+        </p>
+<video width="450" controls>
+    <source src="media/meu-video.mp4.mp4" type="video/mp4">
+    <source src="media/meuvideo.m4v.mp4" type="video/mp4">
+    <source src="media/meu-video.ogv.ogv" type="video/ogv">
+    <source src="media/Meu-Video.webm.webm" type="video/webm">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+</video>
+<p>
+    Tomar cuidado com vídeos hospedados em sites/hospedagem própria com a tag "video", irão consumir muito tráfego de dados
+</p> <hr>
+<h1>Add vídeos de plataforma de hospedagens de vídeos</h1> <!--Para fazer isso basta usar plataformas de hospedagem de vídeos como youtube e vimeo por exemplo para subir o vídeo no seu site da web, clique em compartilhar e vá em incorporar, ent basta copiar o código html pronto e colar no seu código-->
+<iframe width="450" height="253" src="https://www.youtube.com/embed/UOS5CP8tzYQ?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Assim você não está consumindo dados do teu servidor, e sim do YT <small>(mais recomendado por ser o segundo maior site de pesquisa, assim o algoritmo irá lhe auxiliar)</small> ou da vimeo nesse exemplo abaixo:</p>
+<iframe src="https://player.vimeo.com/video/257399106?h=b4f1975b25&color=ff0179&title=0&portrait=0" width="450" height="253" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">o repositório público no Github</a> do Gustavo Guanabara</p> <p>Você também pode acessar o seu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external"> canal gratuito do YouTube</a></p>
+    <h1>Usando Links Internos</h1>
+    <p>Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self"> segunda página</a></p>
+    <!--Para ser interno ele tem que estar na mesma pasta do seu primeiro site-->
+    <p>Você também pode acessar nossa <a href="notícias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+<h1>Links para download</h1>
+<ul>
+    <li><a href="notícias/Livro/meulivro.pdf">Baixar o livro em PDF</a></li>
+    <li><a href="notícias/Livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+</ul>
+</body>
+<!-- A tag "a", vem de âncora e dentro do texto selecionado e envelopado com a tag "a", você precisa da URL do site em que aquele texto selecionado irá direcionar dentro de "href"
+Dentro da tag "a", existem 2 parametros que devem ser usados para que quando clicarem no link ancoravel ele n sobreponha sua página e abra outra aba em vez disso usando target="_blank" rel="external" (para indicar ao navegador que é um link externo) logo após o site escrito no código e dentro <>
+Existe também o target="_self" serve pra indicar pro navegador que é na própria página que o link deve ser aberto-->
+</html>

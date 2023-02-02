@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações </h1> <hr>
+    <hr><h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito </b> usando a tag "b" (tag não semântica(só tem forma negrito))</p>
+    <p>Nesta frase, tem um <strong>termo em destaque</strong> usando a tag "strong" (semântica)</p><hr>
+   <hr> <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag I (Não semântica). </p>
+    <!--Para colocar um texto selecionado em uma tag, um atalho é apertar ctrl + shift + p, clique no wrap with abbreviation (abb) e apenas coloque a tag que deseja usar, nesse exemplo aqui "i"-->
+    <p>Nesta frase temos outro <em>termo em itálico</em> usando a tag EM de ênfase (semântica)</p><hr>
+  <hr><h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark> texto marcado</mark> usando a tag mark</p> <!--a tag "style" é do css, e usamos ela pra dar estilo as coisas, podemos usar entre as tags mark no texto ou utilizar dentro de head abaixo de title a tag style e criamos um seletor pra mark (entre chaves) e escolhemos a cor-->
+    <p>E no outro parágrafo, temos <mark> outro texto marcado </mark> no final</p><hr>
+    <hr><h2>Texto maior e menor</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p><hr> <!--big, virou uma tag obsoleta porque é forma, texto grande, aí deve ser usado css, porém small, para letras pequenas tem um sentido, de contrato por exemplo existem as letras pequenas.-->
+    <hr><h2>Texto deletado</h2>
+    <p>
+Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não cosiderado usando a tag "del"
+    </p><hr>
+    <hr><h2>Texto inserido</h2>
+    <p>
+Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois usando a tag ins (Semântica) ou a <u>tag u (Ñ semântica)</u>
+    </p><hr>
+    <hr><h2>Texto sobrescrito</h2>
+    <p>
+Para inserir coisas do tipo x<sup>20</sup>+3 usando a tag "sup".
+    </p> <hr>
+    <hr><h2>Texto subscrito</h2>
+    <p>
+Para inserir coisas do tipo H<sub>2</sub>O usando a tag "sub".
+    </p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title> <!--è representada por ":"-->
+    <style>
+        div{
+        display: inline-block; /*tudo na mesma linha*/
+        background-color: rgba(102, 110, 110, 0.407);
+        text-align: center;
+        border: 1px solid black; /* borda: altura tipo cor*/
+        height: 200px;
+        width: 200px;
+        }
+        /*As pseudoclasses tem q estar relacionadas com um elemento ou uma classe, estão relacionadas ao estado de um elemento*/
+        div:hover { /*hover quer dizer que ativa quando passar com o mouse em cima*/
+            background-color: darkblue;
+        }
+
+    </style>
+</head>
+<!--"div", é um espaço qualquer que ocupa toda linha ate o final da tela.-->
+<!--height (altura)
+    width (largura)
+-->
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

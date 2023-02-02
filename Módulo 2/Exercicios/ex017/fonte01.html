@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: /*Safe combinations: combinações pra caso não carregar uma carrega outra.
+            
+            se eu não botar a fonte e colocar apenas a categoria, o navegador vai escolher uma fonte daquela categoria*/
+            font-size: ; /*Medidas absolutas: cm, mm, in(polegada), px, 
+            pt(ponto), pc(paica) --> medidas de papel
+            
+            Normalmente 16px, é o tamanho normal da fonte/página e equivale à "1em" ou seja "em" é relacional ao px
+
+            Medidas Relativas: em, ex, rem, vw, vh, %*/
+
+            /*weight(peso) width(largura) height(altura)*/
+            font-weight: ; /*peso da fonte, lighter normal bold bolder ou variação de 100 a 900*/
+            font-style: ; /*estilo fonte*/
+            text-decoration: /*texto decorado*/
+
+            /* Shorthand --> Em vez de usar font-weight, font-size, font-style e font-family uma por uma, usar em ordem font-style --> font-weight --> font-size --> font-family dentro de "font:" */
+        }
+        h1{
+            font: italic bold 3em Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ipsam odit eos architecto libero ad temporibus, voluptas autem quisquam ea illo accusantium amet delectus doloribus quis nobis tenetur placeat maiores.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio temporibus esse dolor doloremque quam possimus modi? Maxime recusandae saepe minima est tempora harum tempore, odit architecto explicabo repudiandae amet possimus.</p>
+    <h2>Subtítulo deo exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nesciunt. Fugit perspiciatis consectetur autem minima recusandae alias ratione doloremque quis, soluta vitae distinctio dicta repudiandae nostrum possimus accusantium, corporis quibusdam?</p>
+</body>
+</html>

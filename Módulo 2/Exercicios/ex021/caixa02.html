@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags semânticas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+       
+        nav{
+
+            background-color: rgb(76, 76, 76);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315); /*sombra de caixa*/ /*Deslocamento: horizontal vertical blur espalhamento e cor*/
+            /*Usar o Devtools pra ajudar na criação do site*/
+            /*box-shadow: inset 1px 1px 1px 1px black;  --> sombra interna segue os mesmos padroes da externa porem só é possivel add ou externa ou interna*/ 
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 50px;
+            margin-left: 100px;
+            text-align: center;
+
+        }
+        nav > a:hover{
+            text-decoration: underline overline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; /*Raio da borda/arrendodamento shorthand de border radius*/
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.451);
+        }
+        article{
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside{
+          background-color: rgb(172, 172, 172);  
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p{
+           margin: 0px;
+        }
+
+        #bola{
+           height: 100px;
+           width: 100px;
+           background-color: rgb(255, 255, 255);
+           margin: 10px;
+           border-radius: 50%;
+        }
+
+        div > img{
+            width: 80px;
+            border-radius: 50px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+        <header> <!--Cabeçalho-->
+            <h1>Meu site</h1>
+            <nav><!--Menu dentro do cabeça~lho-->
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+        </header>
+        <main><!--Conteudo principal-->
+            <section id="assuntos">
+
+            </section><!--Sessão-->
+            <section id="noticias">
+                <article> <!--Artigo-->
+                   <h2>Noticia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reiciendis deserunt voluptatem quisquam! Ipsa sequi voluptatum alias, blanditiis dignissimos ab doloribus consequatur ipsam atque at illo praesentium quis suscipit? Eligendi.</p>
+                    <aside> <!--Conteudo relativo ao artigo-->
+                        Artigo escrito por Matheus da Silva
+                    </aside>
+                </article>
+                <article>
+
+                </article>
+            </section>
+        </main>
+        <footer> <!--Rodape-->
+<p>Desenvolvido pelo matheus assistindo curso em vídeo</p>
+        </footer>
+        <div id="bola"><img src="bolabola.jpeg" alt="bolafutebol"> </div>
+</body>
+</html>

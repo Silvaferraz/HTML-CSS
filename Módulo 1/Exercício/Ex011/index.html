@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgs/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/foto-m.png" type="image/png">
+        <img src="imgs/foto-g.png" alt="Imagemflexível">
+    </picture>
+<!--Dentro da tag "picture" usar a tag "img" para colocar uma imagem base, e acima dela (sempre em ordem decrescente) e dentro da tag picture, a tag, source media type, tudo isso para adaptar a imagem conforme o tamanho da tela do usuário-->
+<h1>Reproduzindo Áudio</h1>
+<p>Vamos aprender a reproduzir áudio em html</p>
+<p>Músicas NEFFEX</p>
+<pre>
+<audio src="media/Take Me Back - NEFFEX.mp3" controls></audio>
+<audio src="media/You Will Never See Me Coming - NEFFEX.mp3" controls></audio>
+</pre>
+        <audio preload="metadata" controls >
+            <source src="media/Ruthless - NEFFEX.mp3" type="audio/mpeg">
+            <source src="media/Ruthless - NEFFEX.ogg" type="audio/ogg">
+            <source src="media/Ruthless - NEFFEX.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir nenhum áudio <a href="media/Ruthless - NEFFEX.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+        </audio>
+
+<!--dentro da tag "audio" sem o src, vamos add a tag source src que é para add vários audios de diferentes formatos pra se caso o navegador aceitar ele vai mostrar um desses 3 e vai tentar carregar em ordem, dentro da tag áudio existe o parametro preload com 3 tipos: auto, metadata, none (metadata é o mais recomendável) o parametro loop, logo que acaba o áudio ele recomeça-->
+<!--Outros formatos de arquivo áudio são mp3 (mpeg), ogg, wav (muito pesado) poi alguns navegadores não suportam alguns formatos então esses são os 3 principais-->
+<!--A tag "audio" serve para colocar um áudio dentro do site, usando o parametro controls ele mostra o botão do audio no site e usando o parametro autoplay ele toca sozinho-->
+</body>
+</html>
